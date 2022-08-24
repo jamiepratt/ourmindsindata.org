@@ -33,10 +33,11 @@ jobs:
     - uses: actions/setup-node@v3
     - run: npm install
     - run: npm run clean
+    - run: ls -al
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
       with:
-        path: ./dist
+        path: dist
   # Deployment job
   deploy:
     environment:
@@ -45,7 +46,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-    - run: ls -al
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v1
