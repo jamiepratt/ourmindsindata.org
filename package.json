@@ -7,8 +7,8 @@
   "repository": "https://github.com/nordicgiant2/vue-nice-homepage.git",
   "scripts": {
     "clean": "rimraf dist/*",
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "dev": "export SET NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs",
+    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs"
   },
   "license": "MIT",
   "devDependencies": {
