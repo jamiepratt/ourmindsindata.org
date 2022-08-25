@@ -22,10 +22,6 @@
           </div>
         </div>
 
-        <div class="interests">
-          {{data.interests}}
-        </div>
-
         <div class="actions">
           <div v-for="item in data.actions">
             <a :href="item.link" class="button"

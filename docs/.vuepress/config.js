@@ -1,15 +1,12 @@
 module.exports = {
-  title: "Hello Kraken",
-  description: "The description of the site.",
+  title: "OurMindsinData.org",
+  description: "",
   head: [],
   dest: "./dist",
   base: "",
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
-      { text: "Projects", link: "/projects/" },
-      { text: "Guide", link: "/guide/" },
-      { text: "GitHub", link: "https://github.com/nordicgiant2/vue-nice-homepage" }
     ],
     sidebar: {
       '/guide/': genSidebarConfig('Guide')
